@@ -1,0 +1,21 @@
+ul {
+    padding-left: 2vw;
+}
+
+li {
+    margin-bottom: 1vh;
+    font-size: 1.1vw;
+}
+
+.side {
+    height: 100%;
+    width: 15vw;
+    font-size: large;
+    background-color: rgb(31, 31, 31);
+}
+
+.sideList {
+    margin-top: 3vh;
+    margin-left: 1vw;
+    color: rgb(162, 162, 162);
+}

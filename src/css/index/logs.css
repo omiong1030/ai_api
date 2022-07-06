@@ -1,0 +1,76 @@
+h1 {
+    padding-left: 1vw;
+
+    font-size: 4vh;
+    color: rgb(105, 105, 105);
+}
+
+.logsTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 8vh;
+    margin-bottom: 2vh;
+}
+
+.logsTable {
+    height: 37vh;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
+
+    background-color: white;
+    box-shadow: 0.2vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.5);
+}
+
+.logTable {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    height: 37vh;
+    width: 100%;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.logTable table {
+    table-layout: fixed;
+}
+
+.logTable thead {
+    position: sticky;
+    top: 0;
+
+    background-color: white;
+}
+
+.logTable tr {
+    display: table;
+    table-layout: fixed;
+    width: 77vw;
+}
+
+.logTable th {
+    text-align: left;
+
+    height: 5vh;
+
+    font-size: 1.3vw;
+    background-color: white;
+}
+
+.logTable td {
+    height: 5vh;
+    background-color: white;
+}
+
+.logTable th,
+.logTable td {
+    padding-left: 0.5vw;
+    border: solid 0.01vh #aaaaaa;
+}

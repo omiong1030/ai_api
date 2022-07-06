@@ -1,0 +1,15 @@
+.dropzone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 33vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.sampleImg {
+    width: 25vw;
+
+    box-shadow: 0.2vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.5);
+}

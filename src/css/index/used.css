@@ -1,0 +1,31 @@
+h1 {
+    padding-left: 1vw;
+
+    font-size: 4vh;
+    color: rgb(105, 105, 105);
+}
+
+.used_title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 8vh;
+    margin-bottom: 2vh;
+}
+
+.used_main_img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 33vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.sampleImg {
+    width: 20vw;
+
+    box-shadow: 0.2vh 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.5);
+}

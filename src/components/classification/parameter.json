@@ -1,0 +1,22 @@
+{
+    "device": {
+        "label": "Device",
+        "type" : "select",
+        "value": ["cpu", "cuda0", "cuda1"],
+        "name": "device"
+        },
+    "train": {
+        "number_of_sample": {
+            "label": "Batch_Size",
+            "type": "number",
+            "value": 4,
+            "name": "batch_size"
+            },
+        "num_workers": {
+            "label": "num_workers",
+            "type": "number",
+            "value": 1,
+            "name": "num_workers"
+            }
+        }
+}
