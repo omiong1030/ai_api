@@ -8,7 +8,7 @@ import "./css/utils.css"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Classification />
-    {/* <Index /> */}
+    {/* <Classification /> */}
+    <Index />
   </React.StrictMode>
 );

@@ -1,29 +1,64 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Doughnut } from 'react-chartjs-2';
+import { Chart, ArcElement } from 'chart.js'
 import "../../css/index/used.css"
-import Imgae1 from "./images/a.png"
-import Imgae2 from "./images/b.png"
-import Imgae3 from "./images/c.png"
 
 export const Used = () => {
+
+    { Chart.register(ArcElement) }
+
+    const graphdata = {
+        datasets: [
+            {
+                data: [15, 25, 35],
+                backgroundColor: ['#B9D8F7', '#FFE5EC', '#DEDFE0'],
+            },
+        ],
+        labels: ['item1', 'item2', 'item3'],
+    };
+
+    const doughnutOptions = {
+        legend: {
+            display: false,
+        },
+        plugins: {
+            doughnutlabel: {
+                labels: [
+                    {
+                        text: 'ITEMS',
+                        color: '#666666',
+                        font: {
+                            size: 10,
+                        },
+                    },
+                    {
+                        text: 'TEST',
+                        color: '#888888',
+                    },
+                ],
+            },
+        },
+    };
+
   return (
-      <React.Fragment>
+      <div>
           <div className="used_title">
               <h1>
-                  {/* <a href="/">Home /</a> */}
+                  <a href="/">Home /</a>
                   Home
               </h1>
           </div>
-          <div class="used_main_img">
-              <div class="subContainer2-1">
-                  <img src={Imgae1} alt="グラフ" className="sampleImg"></img>
-              </div>
-              <div class="subContainer2-2">
-                  <img src={Imgae2} alt="グラフ" className="sampleImg"></img>
-              </div>
-              <div class="subContainer2-3">
-                  <img src={Imgae3} alt="グラフ" className="sampleImg"></img>
-              </div>
+          <div className="used_main_img">
+            <div className='doughnut'>    
+                  <Doughnut data={graphdata} options={doughnutOptions} />
+            </div>
+            <div className='doughnut'>
+                <Doughnut data={graphdata} options={doughnutOptions} />
+            </div>
+            <div className='doughnut'>
+                <Doughnut data={graphdata} options={doughnutOptions} />
+            </div>
           </div>
-      </React.Fragment>
+      </div>
   )
 }
